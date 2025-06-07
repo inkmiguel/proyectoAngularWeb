@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './components/main'; // Import the MainComponent
 import { FormsModule } from '@angular/forms'; // Import FormsModule for two-way data binding
+import { NgChartsModule } from 'ng2-charts'; // <-- Importa el módulo correcto
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FormsModule } from '@angular/forms'; // Import FormsModule for two-way 
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

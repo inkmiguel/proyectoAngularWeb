@@ -73,9 +73,12 @@
     <div class="col-md-6">
       <h4>Gráfica / Observaciones</h4>
       <div class="border rounded p-3 bg-light" style="height: 100%;">
-        <!-- Aquí puedes insertar una gráfica o texto -->
-        <p class="text-muted">Aquí se mostrará una gráfica o recomendaciones personalizadas.</p>
+        <canvas baseChart
+                [data]="barChartData"
+                [options]="barChartOptions"
+                [legend]="barChartLegend"
+                [type]="barChartType">
+        </canvas>
       </div>
     </div>
-  </div>
 </div>
